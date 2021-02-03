@@ -86,7 +86,7 @@ function createWordItemLayout(englishWord, russianWord, id) {
       <p class="fulllist-words-item-wordrus">${russianWord}</p>
 
       <svg class="fulllist-words-item-btn" onclick="removeWordFromStore(event)">
-        <use xlink:href="../src/svg/svgobjects.svg#bin"></use>
+        <use xlink:href="src/svg/svgobjects.svg#bin"></use>
       </svg>
     </div>
     `;
