@@ -1,0 +1,130 @@
+.wordlearning {
+    width: 1155px;
+    height: 607px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    display: none;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    position: relative;
+    z-index: 0;
+    &-cont {
+        position: relative;
+    }
+    &-inner {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        padding: 162px 506px;
+    }
+    &-wordquess {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 44px;
+        /* identical to box height */
+        color: #000000;
+        padding: 0 79px 14px 79px;
+        text-align: center;
+        border-bottom: 3px solid #8ECCDA;
+    }
+    &-wordanswer {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+        text-align: center;
+        margin-top: 16px;
+        display: none;
+    }
+    &-youranswer {
+        background: #FFFFFF;
+        box-shadow: 0px 2px 7px rgba(122, 122, 122, 0.25);
+        border-radius: 5px;
+        width: 100%;
+        border: none;
+        height: 42px;
+        padding: 11px 18px;
+        margin-top: 27px;
+        outline: none;
+        &::placeholder {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #B9B9B9;
+        }
+    }
+    &-buttons {
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+        margin-top: 16px;
+    }
+    &-skip {
+        background: #FFFFFF;
+        box-shadow: 0px 2px 7px rgba(122, 122, 122, 0.25);
+        border-radius: 8px;
+        padding: 3px 34px 4px 14px;
+        border: none;
+        transition: .3s;
+        outline: none;
+        & p {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #B5B5B5;
+            position: relative;
+            display: flex;
+            &::after {
+                content: url('../svg/skip.svg');
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                right: -25px;
+                top: 1px;
+            }
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: rgb(245, 243, 243);
+        }
+    }
+    &-check {
+        background: #FFFFFF;
+        box-shadow: 0px 2px 7px rgba(122, 122, 122, 0.25);
+        border-radius: 8px;
+        padding: 3px 34px 4px 14px;
+        border: none;
+        outline: none;
+        & p {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #B5B5B5;
+            position: relative;
+            display: flex;
+            &::after {
+                content: url('../svg/check.svg');
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                right: -25px;
+                top: 1px;
+            }
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: rgb(245, 243, 243);
+        }
+    }
+}

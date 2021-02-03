@@ -1,0 +1,33 @@
+.word-correct {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 7px #8eccda8e;
+    border-radius: 5px;
+    transition: .3s;
+    position: relative;
+    display: flex;
+    z-index: 10;
+    &::placeholder {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #8ECCDA;
+    }
+    &::after {
+        content: url('../images/word-right.svg');
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        z-index: 100;
+        right: -100px;
+    }
+}
+
+.right-mark {
+    display: none;
+    position: absolute;
+    right: 10px;
+    bottom: 14px;
+    z-index: 100;
+}

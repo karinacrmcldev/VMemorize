@@ -1,0 +1,23 @@
+.nowordtext {
+    &-inner {
+        width: 709px;
+        height: 204px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 59px;
+        /* identical to box height */
+        color: #FFFFFF;
+    }
+    &-image {
+        width: 71px;
+        height: 71px;
+    }
+}

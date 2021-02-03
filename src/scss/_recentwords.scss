@@ -1,0 +1,52 @@
+.recentwords {
+    margin-top: 86px;
+    display: none;
+    &-inner {
+        grid-template-columns: 135px 1007px;
+        padding: 19px;
+        width: 1155px;
+        height: 59px;
+        background: #FFFFFF;
+        border-radius: 8px;
+        display: grid;
+        align-items: center;
+    }
+    &-words {
+        display: flex;
+        &-item {
+            background: #FFFFFF;
+            box-shadow: 0px 2px 7px rgba(122, 122, 122, 0.25);
+            border-radius: 5px;
+            padding: 4px 9px 4px 9px;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            & p {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 15px;
+                color: #7C7C7C;
+                position: relative;
+            }
+            & svg {
+                width: 8px;
+                height: 8px;
+                margin-left: 9px;
+            }
+            & button {
+                border: none;
+                background: transparent;
+                fill: #5F5F5F;
+                transition: .2s;
+                outline: none;
+                &:hover {
+                    cursor: pointer;
+                    fill: #8F0000;
+                }
+            }
+        }
+    }
+}

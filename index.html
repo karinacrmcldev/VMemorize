@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/src/css/reset.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="addword" style="grid-column: 1/2; grid-row: 1/2">
+            <div class="addword-inner">
+                <div class="addword-title">Add word</div>
+                <input type="" class="addword-input english-input" placeholder="Word in English" />
+                <input type="" class="addword-input russian-input" placeholder="Word in Russian" />
+
+                <div class="addword-button-container">
+                    <p class="addword-ertext">All fields must be filled!</p>
+
+                    <button class="addword-button">
+              <p class="addword-button-text">Add</p>
+            </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="wordlist" style="grid-column: 1/2; grid-row: 2/3">
+            <div class="wordlist-inner">
+                <div class="wordlist-title">List</div>
+
+                <div class="emptylist-words">your words will be displayed here..</div>
+
+                <div class="fulllist-words"></div>
+
+                <div class="wordlist-indexescont">
+                    <div class="wordlist-index">
+                        <p>Added:</p>
+                        <span style="color: #62ad61"> </span>
+                    </div>
+
+                    <div class="wordlist-index">
+                        <p>Learned:</p>
+                        <span> 0 </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nowordtext" style="grid-column: 2/3; grid-row: 1/3">
+            <div class="nowordtext-inner">
+                <div class="nowordtext-title">You haven't added any words</div>
+
+                <svg class="nowordtext-image">
+            <use xlink:href="../src/svg/svgobjects.svg#magnifier"></use>
+          </svg>
+            </div>
+        </div>
+        <div class="wordlearning">
+            <div class="wordlearning-inner">
+                <div class="worldlearning-container">
+                    <div class="wordlearning-wordquess"></div>
+                    <div class="wordlearning-wordanswer"></div>
+
+                    <div class="wordlearning-cont">
+                        <input type="text" class="wordlearning-youranswer" placeholder="Your answer..." />
+                        <img src="/src/images/word-right.svg" class="right-mark" alt="" />
+                        <img src="/src/images/word-wrong.svg" class="wrong-mark" alt="" />
+                    </div>
+                    <div class="wordlearning-buttons">
+                        <button class="wordlearning-skip">
+                <p>skip word</p>
+              </button>
+                        <button class="wordlearning-check">
+                <p>check word</p>
+              </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="word-start">
+            <!-- <button class="word-start-btn">Start learning</button> -->
+            <button class="word-start-button">
+          Start learning
+          <div class="word-start-button__horizontal"></div>
+          <div class="word-start-button__vertical"></div>
+        </button>
+        </div>
+
+        <div class="recentwords">
+            <div class="recentwords-inner">
+                <div class="recentwords-title">Recent words:</div>
+                <div class="recentwords-words">
+                    <div class="recentwords-words-item">
+                        <p class="">name</p>
+                        <button>
+                <svg class="nowordtext-image">
+                  <use xlink:href="../src/svg/svgobjects.svg#delete"></use>
+                </svg>
+              </button>
+                    </div>
+
+                    <div class="recentwords-words-item">
+                        <p class="">drug</p>
+                        <button>
+                <svg class="nowordtext-image">
+                  <use xlink:href="../src/svg/svgobjects.svg#delete"></use>
+                </svg>
+              </button>
+                    </div>
+
+                    <div class="recentwords-words-item">
+                        <p class="">imposter</p>
+                        <button>
+                <svg class="nowordtext-image">
+                  <use xlink:href="../src/svg/svgobjects.svg#delete"></use>
+                </svg>
+              </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="/src/js/index.js"></script>
+
+</html>
