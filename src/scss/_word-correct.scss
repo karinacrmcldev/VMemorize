@@ -14,14 +14,6 @@
         line-height: 17px;
         color: #8ECCDA;
     }
-    &::after {
-        content: url('../images/word-right.svg');
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        z-index: 100;
-        right: -100px;
-    }
 }
 
 .right-mark {
