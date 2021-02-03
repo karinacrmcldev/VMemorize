@@ -535,7 +535,7 @@
 
 .addword-button p::after {
   position: absolute;
-  content: url("src/svg/plus.svg");
+  content: url("../svg/plus.svg");
   right: -20px;
 }
 
