@@ -63,10 +63,16 @@ function addWordHandler() {
     errorText.style.opacity = '0';
     russianWordInput.style.border = "2px solid #ffffff00";
     englishWordInput.style.border = "2px solid #ffffff00";
+
+
+
     const id = Date.now() + parseInt(Math.random());
     const templateWordHTML = createWordItemLayout(englishWordInput.value, russianWordInput.value, id);
     addWordToList(templateWordHTML);
     addWordInStore(englishWordInput.value, russianWordInput.value, id);
+
+    addRandomWord();
+
     wordList.style.display = 'flex';
     emptyList.style.display = 'none';
     englishWordInput.value = '';
@@ -76,6 +82,8 @@ function addWordHandler() {
     wordLearning.style.display = 'block';
     noWordText.style.display = 'none';
     startLearningScreen.style.display = "flex"
+
+
 }
 
 function createWordItemLayout(englishWord, russianWord, id) {
