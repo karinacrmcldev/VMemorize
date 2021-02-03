@@ -179,7 +179,7 @@ function checkWord() {
         yourAnswer.classList.add('word-correct');
         wordAnswer.style.display = "block";
         markRight.style.display = "block";
-        checkWordButton.setAttribute('disabled')
+        checkWordButton.setAttribute('disabled', true)
 
         setTimeout(() => {
             addRandomWord(true)
